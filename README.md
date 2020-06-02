@@ -27,4 +27,9 @@
 # 5、 项目可视化展示
 
 
-![](./imgs/imgs_1.png)
+<p align="center">
+  <img alt="githunt" src="./imgs/imgs_1.png">
+  <b>Filter by Language</b><br>
+  <sub>💥 Will remember your selection of language 💥</sub>
+</p>
+
