@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>招聘信息大数据平台</title>
+    <script type="text/javascript" src="js/jquery-2.2.4.min .js"></script>
+    <script>
+	var jsonDataVar='';
+	function getData(){
+		$.ajax({
+			type:"post",
+			url:"Json",
+			async:false,
+			dataType:"json",
+			success:function(res){
+				console.log("成功获取后台数据");
+				window.jsonDataVar=res;
+			}
+		});
+	}
+	getData();
+
+    </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script type="text/javascript" src="js/zturn.js"></script>
+
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map.css">
+
+
+		<link rel="stylesheet" href="layui/css/layui.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="css/style.css">
+
+
+
+
+  <script src="layui/layui.js" charset="utf-8"></script>
+	<style type="text/css">
+
+
+
+	ul,li{list-style-type:none;}
+	body{font:12px/180% Arial, Helvetica, sans-serif;}
+	.demopage{width:960px;margin:0 auto;}
+	.demopage h2{font-size:14px;margin:20px 0;}
+	/* scrollDiv */
+	.scrollDiv{height:25px;/* 必要元素 */line-height:25px;overflow:hidden;/* 必要元素 */color: #00FF00;}
+	.scrollDiv li{height:25px;padding-left:10px;}
+	#s2,#s3{height:100px;}
+
+	</style>
+</head>
+<style type="text/css">
+    body{
+        background: url('img/map_bg.png') center;
+    }
+    .from{
+        height: 1000px;
+        width: 700px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 3px solid;
+        border-color:#fff000;
+        background-color: #fff;
+        border-radius: 30px;
+    /*  filter:alpha(Opacity=60);
+      -moz-opacity:0.9;
+      opacity: 0.9; */
+  }
+  .layui-form-item
+  {
+    margin-top: 30px;
+}
+.layui-form
+{
+    margin-top: 50px;
+}
+</style>
+
+
+
+
+<body>
+
+    <div class="box"></div>
+<div class="data" >
+
+    <div class="data-title">
+        <div class="title-left fl"></div>
+        <div class="title-center fl" style="color: #fff;">招聘信息数据概览</div>
+        <div class="title-right fr"></div>
+    </div>
+    <div class="data-content">
+        <div class="con-left fl">
+            <div class="left-top">
+                <div class="info">
+                    <div class="info-title">职业关键词</div>
+                    <img src="img/bj-1.png" alt="" class="bj-1">
+                    <img src="img/bj-2.png" alt="" class="bj-2">
+                    <img src="img/bj-3.png" alt="" class="bj-3">
+                    <img src="img/bj-4.png" alt="" class="bj-4">
+                    <div class="info-main">
+
+   	<div class="lb_gl">
+<div class="container">
+
+	<div class="layui-carousel" style="background-color: #0A1855;"  	id="test1" >
+  <div carousel-item style="background-color: #0A1855;">
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="a" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="aa1">Hover Me</span>
+				<span class="face" id="aa2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="ab1">Hover Me</span>
+				<span class="face" id="ab2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="ac1">Hover Me</span>
+				<span class="face" id="ac2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="ad1">Hover Me</span>
+				<span class="face" id="ad2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="ae1">Hover Me</span>
+				<span class="face" id="ae2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="af1">Hover Me</span>
+			<span class="face" id="af2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="ag1">Hover Me</span>
+			<span class="face" id="ag2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="ah1">Hover Me</span>
+			<span class="face" id="ah2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="ai1">Hover Me</span>
+			<span class="face" id="ai2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="aj1">Hover Me</span>
+			<span class="face" id="aj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+	<div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="b" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ba1">Hover Me</span>
+				<span class="face" id="ba2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="bb1">Hover Me</span>
+				<span class="face" id="bb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="bc1">Hover Me</span>
+				<span class="face" id="bc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="bd1">Hover Me</span>
+				<span class="face" id="bd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="be1">Hover Me</span>
+				<span class="face" id="be2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="bf1">Hover Me</span>
+			<span class="face" id="bf2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="bg1">Hover Me</span>
+			<span class="face" id="bg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="bh1">Hover Me</span>
+			<span class="face" id="bh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="bi1">Hover Me</span>
+			<span class="face" id="bi2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="bj1">Hover Me</span>
+			<span class="face" id="bj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="c" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ca1">Hover Me</span>
+				<span class="face" id="ca2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="cb1">Hover Me</span>
+				<span class="face" id="cb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="cc1">Hover Me</span>
+				<span class="face" id="cc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="cd1">Hover Me</span>
+				<span class="face" id="cd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="ce1">Hover Me</span>
+				<span class="face" id="ce2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="cf1">Hover Me</span>
+			<span class="face" id="cf2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="cg1">Hover Me</span>
+			<span class="face" id="cg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="ch1">Hover Me</span>
+			<span class="face" id="ch2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="ci1">Hover Me</span>
+			<span class="face" id="ci2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="cj1">Hover Me</span>
+			<span class="face" id="cj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="d" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="da1">Hover Me</span>
+				<span class="face" id="da2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="db1">Hover Me</span>
+				<span class="face" id="db2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="dc1">Hover Me</span>
+				<span class="face" id="dc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="dd1">Hover Me</span>
+				<span class="face" id="dd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="de1">Hover Me</span>
+				<span class="face" id="de2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="df1">Hover Me</span>
+			<span class="face" id="df2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="dg1">Hover Me</span>
+			<span class="face" id="dg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="dh1">Hover Me</span>
+			<span class="face" id="dh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="di1">Hover Me</span>
+			<span class="face" id="di2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="dj1">Hover Me</span>
+			<span class="face" id="dj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="e" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ea1">Hover Me</span>
+				<span class="face" id="ea2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="eb1">Hover Me</span>
+				<span class="face" id="eb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="ec1">Hover Me</span>
+				<span class="face" id="ec2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="ed1">Hover Me</span>
+				<span class="face" id="ed2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="ee1">Hover Me</span>
+				<span class="face" id="ee2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="ef1">Hover Me</span>
+			<span class="face" id="ef2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="eg1">Hover Me</span>
+			<span class="face" id="eg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="eh1">Hover Me</span>
+			<span class="face" id="eh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="ei1">Hover Me</span>
+			<span class="face" id="ei2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="ej1">Hover Me</span>
+			<span class="face" id="ej2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="f" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="fa1">Hover Me</span>
+				<span class="face" id="fa2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="fb1">Hover Me</span>
+				<span class="face" id="fb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="fc1">Hover Me</span>
+				<span class="face" id="fc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="fd1">Hover Me</span>
+				<span class="face" id="fd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="fe1">Hover Me</span>
+				<span class="face" id="fe2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="ff1">Hover Me</span>
+			<span class="face" id="ff2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="fg1">Hover Me</span>
+			<span class="face" id="fg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="fh1">Hover Me</span>
+			<span class="face" id="fh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="fi1">Hover Me</span>
+			<span class="face" id="fi2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="fj1">Hover Me</span>
+			<span class="face" id="fj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="g" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ga1">Hover Me</span>
+				<span class="face" id="ga2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="gb1">Hover Me</span>
+				<span class="face" id="gb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="gc1">Hover Me</span>
+				<span class="face" id="gc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="gd1">Hover Me</span>
+				<span class="face" id="gd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="ge1">Hover Me</span>
+				<span class="face" id="ge2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="gf1">Hover Me</span>
+			<span class="face" id="gf2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="gg1">Hover Me</span>
+			<span class="face" id="gg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="gh1">Hover Me</span>
+			<span class="face" id="gh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="gi1">Hover Me</span>
+			<span class="face" id="gi2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="gj1">Hover Me</span>
+			<span class="face" id="gj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="h" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ha1">Hover Me</span>
+				<span class="face" id="ha2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="hb1">Hover Me</span>
+				<span class="face" id="hb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="hc1">Hover Me</span>
+				<span class="face" id="hc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="hd1">Hover Me</span>
+				<span class="face" id="hd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="he1">Hover Me</span>
+				<span class="face" id="he2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="hf1">Hover Me</span>
+			<span class="face" id="hf2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="hg1">Hover Me</span>
+			<span class="face" id="hg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="hh1">Hover Me</span>
+			<span class="face" id="hh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="hi1">Hover Me</span>
+			<span class="face" id="hi2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="hj1">Hover Me</span>
+			<span class="face" id="hj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="i" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ia1">Hover Me</span>
+				<span class="face" id="ia2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="ib1">Hover Me</span>
+				<span class="face" id="ib2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="ic1">Hover Me</span>
+				<span class="face" id="ic2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="id1">Hover Me</span>
+				<span class="face" id="id2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="ie1">Hover Me</span>
+				<span class="face" id="ie2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="if1">Hover Me</span>
+			<span class="face" id="if2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="ig1">Hover Me</span>
+			<span class="face" id="ig2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="ih1">Hover Me</span>
+			<span class="face" id="ih2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="ii1">Hover Me</span>
+			<span class="face" id="ii2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="ij1">Hover Me</span>
+			<span class="face" id="ij2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+  <div style="background-color: #0A1855;width: 100%;height: 100%;">
+
+		<p class="xxgy" id="j" >我是滚动1</p>
+		<hr class="hr" />
+
+		<div class="left-left">
+			<figure>
+			  <div id="div1">
+				<span class="face" id="ja1">Hover Me</span>
+				<span class="face" id="ja2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div2">
+				<span class="face" id="jb1">Hover Me</span>
+				<span class="face" id="jb2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div3">
+				<span class="face" id="jc1">Hover Me</span>
+				<span class="face" id="jc2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div4">
+				<span class="face" id="jd1">Hover Me</span>
+				<span class="face" id="jd2">Button</span>
+			  </div>
+			</figure>
+			<figure>
+			  <div id="div5">
+				<span class="face" id="je1">Hover Me</span>
+				<span class="face" id="je2">Button</span>
+			  </div>
+			</figure>
+		</div>
+
+		<div class="right-right">
+		<figure>
+
+		  <div id="div1">
+			<span class="face" id="jf1">Hover Me</span>
+			<span class="face" id="jf2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div2">
+			<span class="face" id="jg1">Hover Me</span>
+			<span class="face" id="jg2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div3">
+			<span class="face" id="jh1">Hover Me</span>
+			<span class="face" id="jh2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div4">
+			<span class="face" id="ji1">Hover Me</span>
+			<span class="face" id="ji2">Button</span>
+		  </div>
+		</figure>
+		<figure>
+		  <div id="div5">
+			<span class="face" id="jj1">Hover Me</span>
+			<span class="face" id="jj2">Button</span>
+		  </div>
+		</figure>
+		</div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+   	</div>
+		</div>
+             </div>
+                <div class="top-bottom">
+
+                </div>
+            </div>
+            <div class="left-bottom">
+                <div class="title">招聘数据占比</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_2" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-center fl">
+
+            <div class="map-num">
+
+                <p class="p">实时招聘信息数量</p>
+
+                <div class="num">
+                    <span>0</span>
+                    <span>,</span>
+                    <span>1</span>
+                    <span>9</span>
+                    <span>2</span>
+                    <span>,</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>4</span>
+                </div>
+            </div>
+
+            <div class="cen-top">
+				    <div class="map1"><img src="img/lbx.png"></div>
+				    <div class="map2"><img src="img/jt.png"></div>
+				    <div class="map3"><img src="img/map.png"></div>
+				    <div class="map4" id="map"></div>
+			</div>
+
+            <div class="cen-bottom">
+                <div class="title">地区薪资</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_3" class="charts"></div>
+			</div>
+
+        </div>
+
+		<div class="con-right fr">
+
+			 <div class="right-top">
+			    <img src="img/bj-1.png" alt="" class="bj-1">
+			    <img src="img/bj-2.png" alt="" class="bj-2">
+			    <img src="img/bj-3.png" alt="" class="bj-3">
+			    <img src="img/bj-4.png" alt="" class="bj-4">
+				<div class="scrollDiv" id="s2" style="margin-top: 5%; margin-left: 5%;">
+					<ul id="job_info_ul" >
+						<li style="display: inline;">---------------------------------------------start-------------------------------------------------------------------------------</li>
+						<!-- 极限距离上面 -->
+					</ul>
+				</div>
+				<div style="width: 100%; "  align="center">
+					 <button type="button" class="layui-btn layui-btn-danger" onclick="ttt()" style="margin: 20px 20px 0px 40px;">点击测试适合你的工作岗位</button>
+					 <!-- 修改样式 -->
+				</div>
+			</div>
+
+            <div class="right-center">
+                <div class="title">IT行业均薪TOP10</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_4" class="charts"></div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="title">热门职位TOP5</div>
+                <img src="img/bj-1.png" alt="" class="bj-1">
+                <img src="img/bj-2.png" alt="" class="bj-2">
+                <img src="img/bj-3.png" alt="" class="bj-3">
+                <img src="img/bj-4.png" alt="" class="bj-4">
+                <div id="echarts_6" class="charts"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="from" align="center" id="one"style='display: none;' >
+    <h1 style="font-size: 30px;">大数据招聘问卷调查</h1>
+    <form class="layui-form" action="">
+      <div class="layui-form-item">
+        <label class="layui-form-label">您来自那个城市</label>
+        <div class="layui-input-block">
+          <select name="city1" lay-verify="required">
+           <option value="北京">请选择一个城市</option>
+           <option value="北京" selected>北京市</option>
+           <option value="上海">上海市</option>
+           <option value="天津">天津市</option>
+           <option value="重庆">重庆市</option>
+           <option value="广东">广东省</option>
+           <option value="河南">河南省</option>
+           <option value="安徽">安徽省</option>
+           <option value="福建">福建省</option>
+           <option value="甘肃">甘肃省</option>
+           <option value="贵州">贵州省</option>
+           <option value="海南">海南省</option>
+           <option value="河北">河北省</option>
+           <option value="黑龙江">黑龙江省</option>
+           <option value="湖北">湖北省</option>
+           <option value="湖南">湖南省</option>
+           <option value="吉林">吉林省</option>
+           <option value="江苏">江苏省</option>
+           <option value="江西">江西省</option>
+           <option value="辽宁">辽宁省</option>
+           <option value="青海">青海省</option>
+           <option value="山东">山东省</option>
+           <option value="山西">山西省</option>
+           <option value="陕西">陕西省</option>
+           <option value="四川">四川省</option>
+           <option value="安徽">安徽省</option>
+           <option value="云南">云南省</option>
+           <option value="浙江">浙江省</option>
+           <option value="台湾">台湾省</option>
+           <option value="广西">广西壮族自治区</option>
+           <option value="内蒙">内蒙古自治区</option>
+           <option value="宁夏">宁夏回族自治区</option>
+           <option value="西藏">西藏藏族自治区</option>
+           <option value="新疆">新疆维吾尔自治区</option>
+       </select>
+   </div>
+</div>
+<div class="layui-form-item">
+    <label class="layui-form-label">您想要去的城市</label>
+    <div class="layui-input-block">
+      <select name="city2" lay-verify="required">
+       <option value="北京">请选择一个城市</option>
+       <option value="北京" selected>北京市</option>
+       <option value="上海">上海市</option>
+       <option value="天津">天津市</option>
+       <option value="重庆">重庆市</option>
+       <option value="广东">广东省</option>
+       <option value="河南">河南省</option>
+       <option value="安徽">安徽省</option>
+       <option value="福建">福建省</option>
+       <option value="甘肃">甘肃省</option>
+       <option value="贵州">贵州省</option>
+       <option value="海南">海南省</option>
+       <option value="河北">河北省</option>
+       <option value="黑龙江">黑龙江省</option>
+       <option value="湖北">湖北省</option>
+       <option value="湖南">湖南省</option>
+       <option value="吉林">吉林省</option>
+       <option value="江苏">江苏省</option>
+       <option value="江西">江西省</option>
+       <option value="辽宁">辽宁省</option>
+       <option value="青海">青海省</option>
+       <option value="山东">山东省</option>
+       <option value="山西">山西省</option>
+       <option value="陕西">陕西省</option>
+       <option value="四川">四川省</option>
+       <option value="安徽">安徽省</option>
+       <option value="云南">云南省</option>
+       <option value="浙江">浙江省</option>
+       <option value="台湾">台湾省</option>
+       <option value="广西">广西壮族自治区</option>
+       <option value="内蒙">内蒙古自治区</option>
+       <option value="宁夏">宁夏回族自治区</option>
+       <option value="西藏">西藏藏族自治区</option>
+       <option value="新疆">新疆维吾尔自治区</option>
+   </select>
+</div>
+</div>
+<div class="layui-form-item">
+    <label class="layui-form-label">您会的职业技能:</label>
+    <div class="layui-input-block" id="zyjn">
+  </div>
+</div>
+<div class="layui-form-item">
+    <label class="layui-form-label">想要入职的工作类型:</label>
+    <div class="layui-input-block" id="gjlx">
+
+  </div>
+</div>
+<div class="layui-form-item">
+    <label class="layui-form-label">福利要求:</label>
+    <div class="layui-input-block">
+      <input type="checkbox" name="0" title="无要求">
+	  <input type="checkbox" name="1" title="五险一金">
+	  <input type="checkbox" name="2" title="包吃包住">
+		  <input type="checkbox" name="3" title="其他" checked>
+  </div>
+</div>
+
+
+<div class="layui-form-item">
+    <label class="layui-form-label">您的工作经验：</label>
+    <div class="layui-input-block">
+		<input type="radio" name="year" value="0" title="无工作经验" checked>
+      <input type="radio" name="year" value="1" title="1年">
+      <input type="radio" name="year" value="2" title="1-3年">
+      <input type="radio" name="year" value="3" title="3年以上">
+  </div>
+</div>
+<div class="layui-form-item">
+    <label class="layui-form-label">您的资薪要求：</label>
+    <div class="layui-input-block">
+      <input type="radio" name="money" value="0" title="无要求">
+      <input type="radio" name="money" value="1" title="3000-8000" checked="true">
+      <input type="radio" name="money" value="2" title="8000-15000">
+      <input type="radio" name="money" value="3" title="15000-20000">
+      <input type="radio" name="money" value="4" title="20000以上">
+  </div>
+</div>
+<div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">您对未来的需求与期望（300字内):</label>
+    <div class="layui-input-block">
+      <textarea name="zzzz" placeholder="请输入内容" class="layui-textarea"></textarea>
+  </div>
+</div>
+<div class="layui-form-item">
+    <div class="layui-input-block" >
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+
+  </div>
+</div>
+</form>
+</div>
+</body>
+<script>
+function ttt(){
+	layui.use('layer', function(){
+		var layer=layui.layer;
+    layer.open({
+      type: 1,
+      anim:0,
+	  closeBtn:2,
+	  title:"大数据招聘问卷调查",
+      area: ['800px', '900px'],
+  content: $('#one') //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+});
+});
+}
+  $(function (){
+    setTimeout("A()",1000); //延迟1秒
+  })
+
+function abcd(field,i){
+	  var job_info_tmp=window.sdata.job_info;
+		for(;i<job_info_tmp.length;i++){
+			var j=0;
+
+			if(field.city1==job_info_tmp[i].city){
+				j++;
+			}
+			if(field.city2==job_info_tmp[i].city){
+				j+=2;
+			}
+			if(field.job==job_info_tmp[i].job_tag){
+				j+=2;
+			}
+			var salary=job_info_tmp[i].salary;
+			var a=salary.slice(0,salary.indexOf('-'));
+			var b=salary.slice(salary.indexOf('-')+1,salary.length);
+			switch(field.money){
+				case '0':j++; break;
+				case '1':if(a>=3000) j++;break;
+				case '2':if(a>=5000) j++;break;
+				case '3':if(a>=10000) j++;break;
+				case '4':if(a>=15000) j++;break;
+			}
+			if(j>3){
+				 layer.open({
+				      type: 0,
+				      anim:0,
+					  closeBtn:2,
+					  closeBtn:1,
+					  title:"推荐工作",
+				      area: ['400px', '200px'],
+				      btn:['换一换','关闭'],
+				      content:
+					  '<div style="font-size:15px; margin:20px;line-height:20px;" >'
+					  +'地点：'+job_info_tmp[i].city
+					  +'<br>公司：'+job_info_tmp[i].company_name
+					  +'<br>薪资：'+job_info_tmp[i].salary
+					  +'<br>职业：'+job_info_tmp[i].job_tag
+					  +'<br>职位名称：'+job_info_tmp[i].tag
+					  +'</div>',
+					  btn1:function(){
+						  abcd(field,i+1);
+					  }
+			});
+				break;
+			}
+		}
+		if(i==job_info_tmp.length)
+			{
+		layer.msg("没有找到合适的招聘信息");
+			}
+  }
+
+function A(){
+layui.use('form', function(){
+  var form = layui.form;
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+	  window.abcd(data.field,0);
+	  return false;
+});
+
+});
+}
+
+</script>
+<script src="js/echarts.js"></script>
+<script src="js/echarts.min.js"></script>
+<script type="text/javascript">
+	//滚动插件
+	(function($){
+		$.fn.extend({
+			Scroll:function(opt,callback){
+					//参数初始化
+					if(!opt) var opt={};
+					var _this=this.eq(0).find("ul:first");
+					var lineH=_this.find("li:first").height(), //获取行高
+						line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+						speed=opt.speed?parseInt(opt.speed,10):500, //卷动速度，数值越大，速度越慢（毫秒）
+						timer=opt.timer?parseInt(opt.timer,10):1000; //滚动的时间间隔（毫秒）
+					if(line==0) line=1;
+					var upHeight=0-line*lineH;
+					//滚动函数
+					scrollUp=function(){
+							_this.animate({
+									marginTop:upHeight
+							},speed,function(){
+									for(i=1;i<=line;i++){
+											_this.find("li:first").appendTo(_this);
+									}
+									_this.css({marginTop:0});
+							});
+					}
+					//鼠标事件绑定
+					_this.hover(function(){
+							clearInterval(timerID);
+					},function(){
+							timerID=setInterval("scrollUp()",timer);
+					}).mouseout();
+			}
+		});
+	})(jQuery);
+
+	$(document).ready(function(){
+		$("#s2").Scroll({line:4,speed:500,timer:1000});
+	});
+	</script>
+<script src="js/china.js"></script>
+<script type="text/javascript">
+	datawjdc();
+	function datawjdc(){
+	var data_tag_top_tmp=sdata.tag_top;
+	var gjc_tmp=sdata.gjc;
+	var gjlx=document.getElementById('gjlx');
+	var zyjn=document.getElementById('zyjn');
+	var liStr='';
+	for (var i = 0; i < data_tag_top_tmp.length; i++) {
+		//<input type="checkbox" name="like[write]" title="数据分析">
+		if(i==0) liStr+='<input type="radio" name="job" value="'+data_tag_top_tmp[i].name+'" title="'+data_tag_top_tmp[i].name+'" checked="true">';
+		else liStr+='<input type="radio" name="job" value="'+data_tag_top_tmp[i].name+'" title="'+data_tag_top_tmp[i].name+'">';
+	          };
+
+	      liStr+='<input type="radio" name="job" value="机器视觉" title="机器视觉">'+
+	    	  '<input type="radio" name="job" value="深度学习" title="深度学习">'+
+	    	  '<input type="radio" name="job" value="算法" title="算法">'+
+	    	  '<input type="radio" name="job" value="算法工程师" title="算法工程师">'+
+	    	  '<input type="radio" name="job" value="自然语言处理" title="自然语言处理">';
+	gjlx.innerHTML=liStr;
+	liStr='';
+	for(var i=0;i<5;i++){
+		for(var j=0;j<gjc_tmp.length;j++){
+			if(data_tag_top_tmp[i].name==gjc_tmp[j].name){
+				var ii=0;
+				for(var key in gjc_tmp[j]){
+					if(key!='name')
+					{
+						 liStr+='<input type="checkbox"  name="'+key+'"  title="'+key+'">';
+						 ii++;
+					}
+					if(ii>=2) break;
+				}
+			}
+		}
+	}
+	zyjn.innerHTML=liStr;
+	}
+</script>
+
+<script src="layui/layui.js"></script>
+<script>
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#test1',
+	width: '100%' ,//设置容器宽度,
+	height:'100%',
+	arrow: 'none' ,//始终显示箭头,
+	anim: 'updown' ,//切换动画方式,
+	autoplay:'true',//自动切换,
+	interval:'3000',//切换时间
+    indicator:'none',
+  });
+});
+</script>
+<script type="text/javascript">
+
+var li = document.getElementsByTagName("li");
+
+var detaildiv = document.createElement("div");
+
+detaildiv.id = "detail";
+
+detaildiv.style.fontSize="15px";
+detaildiv.style.fontWeight="600px";
+
+detaildiv.style.borderRadius="10px";
+
+detaildiv.style.backgroundColor = 'rgba(0,0,0,0.2)';
+
+detaildiv.style.color="white";
+
+detaildiv.style.position = "absolute";
+
+detaildiv.style.paddingLeft="5px";
+detaildiv.style.paddingTop="10px";
+detaildiv.style.paddingBottom="10px";
+
+function mouseover(demo) {
+
+detaildiv.innerHTML = demo.innerHTML;
+
+document.body.appendChild(detaildiv);
+
+document.getElementById("detail").style.display = "";
+
+detaildiv.style.left = event.clientX + "px";
+
+detaildiv.style.top = event.clientY + "px";
+
+}
+
+function mouseout() {
+
+document.getElementById("detail").style.display = "none";
+
+}
+</script>
+
+</html>
